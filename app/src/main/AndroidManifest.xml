@@ -1,20 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mikepenz.materialdrawer.app">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--
+     To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:name=".CustomApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name">
+        android:label="@string/app_name"
+        android:theme="@style/MaterialDrawerTheme.Light.ActionBar">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="469673ae6796e3a470ff87d6072a70fb">
+
+        </meta-data>
         <!-- android:supportsRtl="true" -->
+        <!-- <activity -->
+        <!-- android:name=".SimpleHeaderDrawerActivity" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar" > -->
+
+
+        <!-- &lt;!&ndash; android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" &ndash;&gt; -->
+
+
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".SimpleCompactHeaderDrawerActivity" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:theme="@style/CustomTheme" /> -->
+        <!-- <activity -->
+        <!-- android:name=".ActionBarDrawerActivity" -->
+        <!-- android:theme="@style/MaterialDrawerTheme.ActionBar" /> -->
         <activity
-            android:name=".SimpleHeaderDrawerActivity"
-            android:label="@string/app_name"
-            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar"
-            >
-            <!--android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus"-->
+            android:name=".activity.SimpleNonTranslucentDrawerActivity"
+            android:label="@string/drawer_item_simple_fragment_drawer"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar" />
+        <!-- <activity -->
+        <!-- android:name=".MultiDrawerActivity" -->
+        <!-- android:theme="@style/MaterialDrawerTheme.TranslucentStatus" /> -->
+        <!-- <activity -->
+        <!-- android:name=".ComplexHeaderDrawerActivity" -->
+        <!-- android:theme="@style/MaterialDrawerTheme.TranslucentStatus" /> -->
+        <!-- <activity -->
+        <!-- android:name=".SimpleFragmentDrawerActivity" -->
+        <!-- android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus" -->
+        <!-- android:windowSoftInputMode="stateHidden" /> -->
+        <!-- <activity -->
+        <!-- android:name=".EmbeddedDrawerActivity" -->
+        <!-- android:theme="@style/MaterialDrawerTheme" /> -->
+        <!-- <activity -->
+        <!-- android:name=".FullscreenDrawerActivity" -->
+        <!-- android:theme="@style/FullscreenTheme" /> -->
+        <!-- <activity -->
+        <!-- android:name=".CustomContainerActivity" -->
+        <!-- android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar" /> -->
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,34 +86,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SimpleCompactHeaderDrawerActivity"
-            android:label="@string/app_name"
-            android:theme="@style/CustomTheme"></activity>
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar"
+            android:name=".activity.ParkActivity"
+            android:label="@string/title_activity_park"></activity>
         <activity
-            android:name=".ActionBarDrawerActivity"
-            android:theme="@style/MaterialDrawerTheme.ActionBar" />
+            android:name=".activity.CurrentCarActivity"
+            android:label="@string/title_activity_current_car"></activity>
         <activity
-            android:name=".SimpleNonTranslucentDrawerActivity"
-            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar" />
-        <activity
-            android:name=".MultiDrawerActivity"
-            android:theme="@style/MaterialDrawerTheme.TranslucentStatus" />
-        <activity
-            android:name=".ComplexHeaderDrawerActivity"
-            android:theme="@style/MaterialDrawerTheme.TranslucentStatus" />
-        <activity
-            android:name=".SimpleFragmentDrawerActivity"
-            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar.TranslucentStatus"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".EmbeddedDrawerActivity"
-            android:theme="@style/MaterialDrawerTheme" />
-        <activity
-            android:name=".FullscreenDrawerActivity"
-            android:theme="@style/FullscreenTheme" />
-        <activity
-            android:name=".CustomContainerActivity"
-            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar" />
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar"
+            android:name=".activity.ParkListActivity"
+            android:label="@string/title_activity_park_list"></activity>
+
+        <activity android:name=".activity.until.PageIndicatorActivity"
+            android:label="订单列表"
+            ></activity>
+
+        <activity android:name=".activity.ProductActivity"
+            android:label="E8093电动车"
+            ></activity>
+
+        <activity android:name=".activity.PayActivity"
+
+            ></activity>
+        <activity android:name=".activity.OrderActivity"></activity>
     </application>
 
 </manifest>

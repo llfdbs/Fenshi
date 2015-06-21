@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:divider="?android:attr/listDivider"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/main_padding">
+
+        <TextView
+            android:id="@+id/order_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_name"
+            android:textSize="@dimen/user_txt" />
+
+        <TextView
+            android:id="@+id/order_name_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_padding"
+            android:layout_toRightOf="@id/order_name"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="郑州成人之美软件有限公司郑州成"
+            android:textSize="@dimen/user_txt" />
+
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_name_content"
+            android:layout_marginTop="@dimen/main_padding"
+            android:text="@string/order_name"
+            android:textSize="@dimen/user_txt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/order_price"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/main_padding"
+            android:layout_toRightOf="@id/order_name"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="43元"
+            android:textSize="@dimen/user_txt" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/User.List.Item"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            style="@style/User.List.Item.TextView"
+            android:layout_weight="0"
+            android:text="账户余额：" />
+
+        <TextView
+            style="@style/User.List.Item.TextView"
+            android:text="0元" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/User.List.Item"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            style="@style/User.List.Item.TextView"
+            android:layout_weight="0"
+            android:text="还需支付：" />
+
+        <TextView
+            style="@style/User.List.Item.TextView"
+            android:text="0元" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/User.List.Item"
+        android:layout_height="60dp"
+        android:id="@+id/pay_yinlian"
+        >
+
+        <ImageView
+            style="@style/User.List.Item.TextView"
+            android:layout_width="40dp"
+            android:layout_weight="0"
+            android:src="@drawable/unionpay2x" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        
+        <TextView
+            style="@style/User.List.Item.TextView"
+            android:text="银行卡支付" />
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/gray_bottom_text"
+                style="@style/User.List.Item.TextView"
+                android:text="支持储蓄卡信用卡，无需开通网银" />
+        </LinearLayout>
+
+
+        <RadioButton
+            android:id="@+id/pay_chose_yinlian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pay_ali"
+        android:layout_height="60dp"
+        style="@style/User.List.Item">
+
+        <ImageView
+            style="@style/User.List.Item.TextView"
+            android:layout_width="40dp"
+            android:layout_weight="0"
+            android:src="@drawable/zhifubao2x" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/User.List.Item.TextView"
+                android:text="支付宝付款" />
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/gray_bottom_text"
+                style="@style/User.List.Item.TextView"
+                android:text="推荐有支付宝账户的用户使用" />
+        </LinearLayout>
+
+
+        <RadioButton
+            android:id="@+id/pay_chose_ali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pay_weichar"
+        android:layout_height="60dp"
+        style="@style/User.List.Item">
+
+        <ImageView
+            style="@style/User.List.Item.TextView"
+            android:layout_width="40dp"
+            android:layout_weight="0"
+            android:src="@drawable/weixin2x" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/User.List.Item.TextView"
+                android:text="微信支付" />
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/gray_bottom_text"
+                style="@style/User.List.Item.TextView"
+                android:text="推荐安装微信5.0及以上版本的使用" />
+        </LinearLayout>
+
+
+        <RadioButton
+            android:id="@+id/pay_chose_weichar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/red_yellow"
+        android:textColor="@color/white"
+        android:text="确认支付"
+        />
+
+</LinearLayout>

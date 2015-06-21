@@ -2,4 +2,16 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="user_list_item">36dp</dimen>
+    <dimen name="user_list_item_img_margin_left">8dp</dimen>
+    <dimen name="user_margin_top">15dp</dimen>
+
+    <dimen name="main_padding">15dp</dimen>
+
+    <dimen name="user_txt">16sp</dimen>
+    <dimen name="order_store_name">16sp</dimen>
+    <dimen name="order_prices">16sp</dimen>
+    <dimen name="store_item_txt">14sp</dimen>
+    <dimen name="main_txt">18sp</dimen>
 </resources>

@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:divider="?android:attr/listDivider"
+    android:orientation="vertical"
+    android:showDividers="beginning|middle"
+    tools:context="com.chengmei.activity.OrderActivity">
+
+    <LinearLayout
+        style="@style/User.List.Item"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/User.List.Item.TextView"
+            android:text="车辆类型" />
+
+        <TextView
+            style="@style/User.List.Item.TextView.Right"
+            android:text="ExJ9077小型车" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/User.List.Item">
+
+        <TextView
+            style="@style/User.List.Item.TextView"
+            android:text="租用类型" />
+
+        <Spinner
+            android:id="@+id/order_spinner"
+            android:layout_width="150dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/User.List.Item">
+
+        <TextView
+            style="@style/User.List.Item.TextView"
+            android:text="租用日期" />
+
+        <TextView
+            style="@style/User.List.Item.TextView.Right"
+            android:text="2015.06.18" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/User.List.Item">
+
+        <TextView
+            style="@style/User.List.Item.TextView"
+            android:text="租用时间" />
+
+        <TextView
+            style="@style/User.List.Item.TextView.Right"
+            android:text="2015.06.18"
+            android:gravity="center"
+            android:textColor="@color/yellow_dark" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="至"
+            android:gravity="center" />
+        <TextView
+            style="@style/User.List.Item.TextView.Right"
+            android:text="2015.06.30"
+            android:gravity="center"
+            android:textColor="@color/yellow_dark" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        style="@style/User.List.Item"
+        android:orientation="vertical"
+        android:layout_height="80dp"
+        >
+
+        <TextView
+            style="@style/User.List.Item.TextView"
+            android:text="订单备注" />
+
+        <EditText
+            style="@style/User.List.Item.TextView"
+            android:minLines="3"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:hint="限45个字"
+            android:layout_width="match_parent"
+            android:textColor="@color/gray_bottom_text" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/order_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/yellow_dark"
+        android:text="提交订单"
+        android:textColor="@color/white" />
+
+</LinearLayout>

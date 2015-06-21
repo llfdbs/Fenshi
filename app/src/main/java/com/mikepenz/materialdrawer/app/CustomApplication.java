@@ -6,7 +6,9 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.widget.ImageView;
 
+import com.mikepenz.iconics.Iconics;
 import com.mikepenz.materialdrawer.util.DrawerImageLoader;
+import com.mikepenz.octicons_typeface_library.Octicons;
 import com.squareup.picasso.Picasso;
 
 /**
@@ -35,7 +37,7 @@ public class CustomApplication extends Application {
                 return null;
             }
         });
-
+        Iconics.registerFont(new Octicons());
         /*
         TODO FIND LOGIC TO SUPPORT GLIDE
         //initialize and create the image loader logic

@@ -11,14 +11,15 @@
     <!--android:background="?attr/colorPrimary"-->
     <!--android:elevation="4dp" />-->
 
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp" />
 
     <FrameLayout
         android:id="@+id/drawer_container"
@@ -31,13 +32,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/txtLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="test"
-                android:textSize="16sp" />
+             <fragment
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:name="com.mikepenz.materialdrawer.app.Fragment.MainFragment"
+                 >
+
+             </fragment>
         </FrameLayout>
     </FrameLayout>
 </RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="8dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="18sp"
+            style="@style/Help.Text"
+            android:text="京沙路停车场" />
+
+        <TextView
+            style="@style/Help.Text"
+            android:text="E798电动车一辆"
+            android:textColor="@color/gray_bottom_text" />
+
+
+        <TextView
+            style="@style/Help.Text"
+            android:text="使用时间： 2015.06.19 8：00 至 2015.06.19 8：00  "
+            android:textColor="@color/gray_bottom_text" />
+
+        <TextView
+            style="@style/Help.Text"
+            android:text="租车费用 ： 80元"
+            android:textColor="@color/gray_bottom_text" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

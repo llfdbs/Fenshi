@@ -13,4 +13,50 @@
     <!-- overwrite the selected colors because the primary color is to dark -->
     <color name="material_drawer_selected_text">#536EEA</color>
     <color name="material_drawer_dark_selected_text">#536EEA</color>
+
+    <color name="green_light">#ff95f058</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#e5e5e5</color>
+    <color name="transparent">#00FFFFFF</color>
+
+
+    <color name="splitline_bg">#b2b2b2</color>
+
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="gray">#808080</color>
+    <color name="lightgreen">#99CC33</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+
+    <color name="light_screen">#2025bd2d</color>
+
+    <color name="red_exit">#f29b76</color>
+    <color name="red_exit_dark">#FFA26452</color>
+
+    <color name="blue">#ff3fc6da</color>
+    <color name="block">#000000</color>
+    <color name="green">#ff30ba0b</color>
+    <color name="red">#f33201</color>
+    <color name="yellow">#fff9ff0f</color>
+    <color name="red_yellow">#f36d2d</color>
+    <color name="gray_bg">#F3F3F3</color>
+    <color name="gray_dark">#666666</color>
+    <color name="blue_light">#22C1FC</color>
+    <color name="bottom_bg">#EFF2F2</color>
+    <color name="yellow_dark">#FDA100</color>
+    <color name="blue_dark">#0D5E7C</color>
+    <color name="blue2">#0D27FB</color>
+    <color name="block_60">#60000000</color>
+
+
+    <color name="transaction">#00000000</color>
+    <color name="gray_dark2">#30666666</color>
 </resources>

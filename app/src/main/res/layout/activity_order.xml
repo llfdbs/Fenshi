@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cs_title= "http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg"
+    tools:context="com.chengmei.activity.PageIndicatorActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <com.viewpagerindicator.TabPageIndicator
+            android:id="@+id/order_titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        </FrameLayout>
+
+        <!--cs_title:titleColor= "@color/block"-->
+        <!--cs_title:selectColor= "@color/blue_light"-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/order_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>
