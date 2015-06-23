@@ -42,4 +42,5 @@ dependencies {
     compile 'com.mikepenz:community-material-typeface:1.0.0@aar'
     compile project(':quickdv')
     compile 'com.android.support:cardview-v7:22.2.0'
+    compile 'it.neokree:MaterialTabs:0.11'
 }

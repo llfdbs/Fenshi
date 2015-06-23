@@ -15,6 +15,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 当前停车场的基本信息
+ * **/
 public class ParkActivity extends MapActivity {
     List<Map<String,Object>> data;
 

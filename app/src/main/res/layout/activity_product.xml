@@ -1,149 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray_bg">
+    android:orientation="vertical">
 
-    <LinearLayout
+
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="?android:attr/listDivider"
-        android:orientation="vertical"
-        android:showDividers="beginning|middle|end">
+        android:background="@color/gray_bg">
 
-        <include
-            layout="@layout/imageslider"
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="180dp" />
-
-        <LinearLayout style="@style/Product.Layout">
-
-            <android.support.v4.widget.Space
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/product_order"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/yellow_dark"
-                android:padding="6dp"
-                android:text="预约车辆"
-                android:textColor="@color/white"
-                android:layout_marginRight="20dp"
-                />
-
-            <Button
-                android:id="@+id/product_get"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/yellow_dark"
-                android:padding="6dp"
-                android:text="开始租用"
-                android:textColor="@color/white" />
-        </LinearLayout>
-
-        <LinearLayout
-            style="@style/User.List.Item2"
-            android:layout_marginTop="10dp"
-            android:background="@color/white">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="停车场位置"
-
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            style="@style/Product.Layout"
-            android:layout_height="70dp"
+            android:layout_height="match_parent"
             android:divider="?android:attr/listDivider"
-            android:dividerPadding="5dp"
-            android:showDividers="middle">
+            android:orientation="vertical"
+            android:showDividers="beginning|middle|end">
+            <include
+                layout="@layout/imageslider"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
 
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1">
+            <LinearLayout style="@style/Product.Layout">
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/product_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/yellow_dark"
+                    android:padding="6dp"
+                    android:text="预约车辆"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/product_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yellow_dark"
+                    android:padding="6dp"
+                    android:text="开始租用"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/User.List.Item2"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
 
                 <TextView
-                    android:id="@+id/product_location"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:layout_marginRight="10dp"
-                    android:maxLines="2"
-                    android:text="露西商城路向东800米露西商城路向东800米露西商城路向东800米露西" />
+                    android:layout_marginLeft="10dp"
+                    android:text="停车场位置"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Product.Layout"
+                android:layout_height="70dp"
+                android:divider="?android:attr/listDivider"
+                android:dividerPadding="5dp"
+                android:showDividers="middle">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/product_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="露西商城路向东800米露西商城路向东800米露西商城路向东800米露西" />
+
+                    <ImageView
+                        android:id="@+id/product_loction_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@id/product_location"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/location" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/product_loction_icon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/product_loction_icon"
+                        android:text="8.2km"
+                        android:textColor="@color/gray_bottom_text" />
+                </RelativeLayout>
+
 
                 <ImageView
-                    android:id="@+id/product_loction_icon"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_below="@id/product_location"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/location" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/product_loction_icon"
-                    android:layout_marginLeft="10dp"
-                    android:layout_toRightOf="@id/product_loction_icon"
-                    android:text="8.2km"
-                    android:textColor="@color/gray_bottom_text" />
-            </RelativeLayout>
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/icon_phone" />
+            </LinearLayout>
 
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@mipmap/icon_phone" />
+            <TextView
+                style="@style/User.List.Item2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:text="车辆基本参数"
+                android:textColor="@color/gray_bottom_text" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="15dp"
+                android:text="*服务流程:\n*服务内容\n\n\n\n\n\n\n" />
+
+            <TextView
+                style="@style/User.List.Item2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:text="租用须知"
+                android:textColor="@color/gray_bottom_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="15dp"
+                android:text="*有效期:\n*使用时间:\n\n\n\n\n\n\n" />
+
         </LinearLayout>
 
-
-        <TextView
-            style="@style/User.List.Item2"
-            android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
-            android:background="@color/white"
-            android:paddingLeft="15dp"
-            android:text="车辆基本参数"
-            android:textColor="@color/gray_bottom_text" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:lineSpacingMultiplier="1.2"
-            android:padding="15dp"
-            android:text="*服务流程:\n*服务内容\n\n\n\n\n\n\n" />
-
-        <TextView
-            style="@style/User.List.Item2"
-            android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
-            android:background="@color/white"
-            android:paddingLeft="15dp"
-            android:text="租用须知"
-            android:textColor="@color/gray_bottom_text" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:lineSpacingMultiplier="1.2"
-            android:padding="15dp"
-            android:text="*有效期:\n*使用时间:\n\n\n\n\n\n\n"
-            android:layout_marginBottom="10dp"
-            />
-
-    </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
+</LinearLayout>

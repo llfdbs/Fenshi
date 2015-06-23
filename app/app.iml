@@ -73,9 +73,11 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.github.markushi/android-ui/1.2/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.mikepenz/community-material-typeface/1.0.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.mikepenz/meteocons-typeface/1.1.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/iconics-1.0.2/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/it.neokree/MaterialTabs/0.11/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/materialdrawer-3.0.7/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/octicons-typeface-2.2.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/recycleview-release/jars" />
@@ -103,10 +105,12 @@
     <orderEntry type="library" exported="" name="com.android.volley-2015.05.28" level="project" />
     <orderEntry type="library" exported="" name="meteocons-typeface-1.1.1" level="project" />
     <orderEntry type="library" exported="" name="iconics-1.0.2-" level="project" />
+    <orderEntry type="library" exported="" name="android-ui-1.2" level="project" />
     <orderEntry type="library" exported="" name="recycleview-release-" level="project" />
     <orderEntry type="library" exported="" name="aboutlibraries-5.0.3-" level="project" />
     <orderEntry type="library" exported="" name="support-v4-22.2.0" level="project" />
     <orderEntry type="library" exported="" name="community-material-typeface-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="MaterialTabs-0.11" level="project" />
     <orderEntry type="library" exported="" name="library-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-22.2.0" level="project" />
     <orderEntry type="library" exported="" name="materialdrawer-3.0.7-" level="project" />

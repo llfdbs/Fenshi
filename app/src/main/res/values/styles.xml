@@ -3,9 +3,9 @@
 
     <style name="CustomTheme" parent="@style/MaterialDrawerTheme.Light.DarkToolbar">
         <!-- ...and here we setting appcompat’s color theme attrs -->
-        <item name="colorPrimary">#F1433C</item>
-        <item name="colorPrimaryDark">#D03033</item>
-        <item name="colorAccent">#02A8F3</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/accent</item>
 
         <!-- MaterialDrawer specific values -->
         <item name="material_drawer_background">@color/material_drawer_dark_background</item>
@@ -16,7 +16,7 @@
         <item name="material_drawer_hint_text">@color/material_drawer_dark_hint_text</item>
         <item name="material_drawer_divider">@color/material_drawer_dark_divider</item>
         <item name="material_drawer_selected">@color/material_drawer_dark_selected</item>
-        <item name="material_drawer_selected_text">#F1433C</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
         <item name="material_drawer_header_selection_text">
             @color/material_drawer_dark_primary_text
         </item>
@@ -155,6 +155,12 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
 
     <style name="Help.Text" parent="Order">
         <item name="android:layout_height">wrap_content</item>
@@ -194,11 +200,11 @@
 
 
     <style name="StyledIndicators" parent="style_actionbar">
-        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
-        <item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>
-        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+        <!--<item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>-->
+        <!--<item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>-->
+        <!--<item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>-->
         <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
-        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+        <!--<item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>-->
     </style>
 
     <style name="CustomTitlePageIndicator">

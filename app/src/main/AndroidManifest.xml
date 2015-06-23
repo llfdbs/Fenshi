@@ -98,6 +98,7 @@
             android:label="@string/title_activity_park_list"></activity>
 
         <activity android:name=".activity.until.PageIndicatorActivity"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar"
             android:label="订单列表"
             ></activity>
 

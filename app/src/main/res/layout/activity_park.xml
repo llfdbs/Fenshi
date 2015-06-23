@@ -1,77 +1,82 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:divider="?android:attr/listDivider"
-        android:orientation="vertical"
-        android:showDividers="beginning|middle|end"
-        >
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            android:elevation="4dp" />
-        <!-- TODO: Update blank fragment layout -->
-        <com.amap.api.maps2d.MapView
-            android:id="@+id/map"
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="180dp"/>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 
-        <android.widget.Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
-            style="@style/Setting.Linear"
-
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:divider="?android:attr/listDivider"
-            android:dividerPadding="10dp"
-            android:showDividers="beginning|middle"
-            >
+            android:orientation="vertical"
+            android:showDividers="beginning|middle|end">
 
-            <ImageView
-                style="@style/Setting.Image"
-                android:src="@mipmap/icon_point"/>
+
+            <!-- TODO: Update blank fragment layout -->
+            <com.amap.api.maps2d.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                style="@style/Setting.Linear"
+
+                android:divider="?android:attr/listDivider"
+                android:dividerPadding="10dp"
+                android:showDividers="beginning|middle">
+
+                <ImageView
+                    style="@style/Setting.Image"
+                    android:src="@mipmap/icon_point" />
+
+                <TextView
+                    style="@style/Setting.Text"
+                    android:padding="5dp"
+                    android:text="华北水电停车场 \n北环路与索领路向东200米路南 \n联系电话：15639932746" />
+
+                <ImageView
+                    style="@style/Setting.Image"
+                    android:src="@mipmap/icon_phone" />
+            </LinearLayout>
+
+            <android.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
 
             <TextView
-                style="@style/Setting.Text"
-                android:padding="5dp"
-                android:text="华北水电停车场 \n北环路与索领路向东200米路南 \n联系电话：15639932746"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:text="可用车辆"
+                android:textColor="?android:attr/textColorPrimaryDisableOnly" />
 
-            <ImageView
-                style="@style/Setting.Image"
-                android:src="@mipmap/icon_phone"/>
+            <com.quickdv.activity.view.CustomListView
+                android:id="@+id/usable_car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+            </com.quickdv.activity.view.CustomListView>
         </LinearLayout>
 
-        <android.widget.Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="@color/white"
-            android:text="可用车辆"
-            android:textColor="?android:attr/textColorPrimaryDisableOnly"
-            />
-
-        <com.quickdv.activity.view.CustomListView
-            android:id="@+id/usable_car"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </com.quickdv.activity.view.CustomListView>
-    </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
+</LinearLayout>
